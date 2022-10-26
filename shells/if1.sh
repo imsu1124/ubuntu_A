@@ -1,8 +1,11 @@
 #!/bin/bash
 
-man=10
-woman=20
-if [ $man -lt $woman ]
-then
-	echo woman
+echo	"File nmae	: $0"
+echo "Parameter count	: $#"
+echo "All Parameters	:	$@"
+
+if [  "$1"	=  ok ]; then
+		echo	"good~!!"
+else
+		echo	"bad~!!"
 fi

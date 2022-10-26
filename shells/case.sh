@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ $# -eq 0 ]; then
+		echo "Input the nation name~!!"
+	elif [ $# -ge 2 ]; then
+		echo "This program require only one Parameter.!!"
+	else
 case "$1" in
 	kr)
 		echo "Seoul"
@@ -14,5 +19,9 @@ case "$1" in
 		echo "Tokyo"
 		;;
 	*)
-		echo "input the nation name~!!"
+		echo "Your entry =>$1 is not in the list"
+		;;
+
+
 esac
+fi
